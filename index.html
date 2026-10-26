@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Comunicaciones</title>
+</head>
+<body>
+
+    <header class="main-header">
+        <h1>Comunicadores</h1>
+    </header>
+
+    <main class="container">
+        
+        <!-- PRIMERA SECCIÓN / FORMULARIO CLIENTE -->
+        <section class="card form_cliente">
+            <div class="card-content">
+                <h2>¿Quieres ser parte de una nueva era de participación empresarial?</h2>
+                <p>Llena el siguiente formulario con tus datos y te mandaremos un correo lo más pronto posible con el proceso para poder crear tu propio Portafolio Virtual.</p>
+                
+                <form action="guardar.php" method="POST">
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>        
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" name="correo" placeholder="tucorreo@ejemplo.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="+57 300 123 4567">
+                    </div>
+                    <button type="submit" class="btn-submit">Enviar mensaje</button>
+                </form>
+            </div>
+            
+            <!-- Espacio para Imagen 1 -->
+            <div class="card-image">
+                <img src="como-hacer-portafolio-evidencias-creativo.jpg" alt="Participación Empresarial">
+            </div>
+        </section>
+
+        <!-- PRIMER SALTO DE PÁGINA / DIVISOR -->
+        <hr class="salto-pagina">
+
+        <!-- SEGUNDA SECCIÓN / FORMULARIO TRABAJO -->
+        <section class="card form_trabalho">
+            <div class="card-content">
+                <h2>También buscamos jóvenes promesas que permitan mantener y ayudar a la página</h2>
+                <p>Manda tus datos en este formulario para revisar tu perfil competitivo y tener una oportunidad de trabajo con nosotros.</p>
+                
+                <form action="guardar_2.php" method="POST">
+                    <div class="form-group">
+                        <label for="name">Nombre</label>
+                        <input type="text" id="name" name="nombre" placeholder="Tu nombre completo" required>        
+                    </div>
+                    <div class="form-group">
+                        <label for="correo">Correo electrónico</label>
+                        <input type="email" id="correo" name="correo" placeholder="tucorreo@ejemplo.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cell">Teléfono</label>
+                        <input type="tel" id="cell" name="telefono" placeholder="+57 300 123 4567">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" name="mensaje" placeholder="Cuéntame sobre tu proyecto..." rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Enviar mensaje</button>
+                </form>
+            </div>
+
+            <!-- Espacio para Imagen 2 -->
+            <div class="card-image">
+                <img src="trabalho.jpg" alt="Oportunidad de Trabajo">
+            </div>
+        </section>
+
+        <!-- SEGUNDO SALTO DE PÁGINA / DIVISOR -->
+        <hr class="salto-pagina">
+
+    </main>
+
+</body>
+</html>
